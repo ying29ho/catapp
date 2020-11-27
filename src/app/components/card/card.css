@@ -1,0 +1,11 @@
+.card {
+  page-break-inside: avoid;
+}
+
+.image {
+  object-fit: cover;
+  object-position: 50% 20%;
+  /* overflow: hidden; */
+  height: 140px;
+  width: 159px;
+}

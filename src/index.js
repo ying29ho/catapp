@@ -4,18 +4,27 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { Helmet } from "react-helmet";
 import { Provider } from "react-redux";
-import store from "./redux/store";
-
+import { createStore } from "redux";
+// import rootReducer from  "./redux/reducer";
+// import store from "./redux/store";
+import "bootstrap/dist/css/bootstrap.min.css";
+import likes from "./redux/reducer";
 import { BrowserRouter as Router } from "react-router-dom";
 import ScrollToTop from "./shared/ScrollToTop";
+
+// const store = createStore(rootReducer);
+const store = createStore(
+  likes,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+);
 
 ReactDOM.render(
   <Provider store={store}>
     <Router>
       <Helmet>
-        <title>Ivo Digital Starter Project</title>
-        <meta property="og:title" content="Ivo Digital Starter Project" />
-        <meta property="og:site_name" content="Ivo Digital Starter Project" />
+        <title>The Cat App</title>
+        <meta property="og:title" content="The Cat App" />
+        <meta property="og:site_name" content="The Cat app" />
       </Helmet>
       <ScrollToTop>
         <App />

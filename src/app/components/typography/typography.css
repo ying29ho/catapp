@@ -1,0 +1,132 @@
+@font-face {
+  font-family: "AvenirNext";
+  font-weight: normal;
+  src: url("/resources/fonts/avenir-next/Metropolis-Regular.otf");
+}
+
+@font-face {
+  font-family: "AvenirNext";
+  font-weight: bold;
+  src: url("/resources/fonts/avenir-next/Metropolis-Bold.otf");
+}
+
+.loading {
+  font-size: 32px;
+  line-height: 41px;
+  letter-spacing: -3%;
+  text-align: center;
+}
+
+h1.loading {
+  color: #a88e74;
+  font-family: "AvenirNext", sans-serif !important;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 41px;
+  letter-spacing: -0.03em;
+}
+
+h1.heading-text {
+  font-family: "AvenirNext", sans-serif !important;
+  color: #143154;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 41px;
+  letter-spacing: -3%;
+  text-align: center;
+}
+
+.paragraph {
+  font-family: "AvenirNext" !important;
+  color: #143154;
+  font-style: normal;
+}
+
+.p1 {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: -3%;
+  text-align: center;
+}
+
+.p2 {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: justify;
+}
+
+.p3 {
+  color: #b3bdd2 !important;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 120%;
+  text-align: center;
+}
+
+.p4 {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 120%;
+  text-align: left;
+}
+
+.p5 {
+  color: #7b9abf !important;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 120%;
+  text-align: left;
+}
+
+.p6 {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: left;
+}
+
+.title {
+  font-family: "AvenirNext" !important;
+  color: #143154;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.t1 {
+  font-size: 16px;
+  line-height: 120%;
+  text-align: left;
+  margin-bottom: 0 !important;
+}
+
+.t2 {
+  font-size: 18px;
+  line-height: 120%;
+  text-align: left;
+}
+
+.t3 {
+  font-size: 16px;
+  line-height: 120%;
+  font-weight: 500;
+}
+
+.subheading {
+  font-family: "AvenirNext" !important;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 120%;
+  color: #143154;
+}
+
+.button {
+  font-family: "AvenirNext" !important;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}

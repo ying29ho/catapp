@@ -1,0 +1,20 @@
+.primary {
+  background-color: #e8eaee;
+  color: #143154;
+}
+
+.new-pri {
+  background-color: #e8eaee;
+  color: #143154;
+}
+.new-pri.disabled,
+.new-pri:disabled {
+  opacity: 1;
+  background-color: #143154;
+  color: #fff;
+}
+
+.secondary {
+  background-color: #143154;
+  color: #fff;
+}

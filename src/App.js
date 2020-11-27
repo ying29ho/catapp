@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { useDispatch } from "react-redux";
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 import Layout from "./app/layout";
 
