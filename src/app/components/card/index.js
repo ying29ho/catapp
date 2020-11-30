@@ -1,6 +1,4 @@
 import React from "react";
-// import { Card } from "antd";
-// import { Card } from "bootstrap";
 import { LikedSm, NoLikedSm } from "../button";
 import { Paragraph, Title } from "../typography";
 import "./card.css";
