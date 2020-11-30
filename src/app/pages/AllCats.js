@@ -16,7 +16,7 @@ const AllCats = ({ data, likes, ...props }) => {
   };
   return (
     <>
-      {/* <DisplayCatModal
+      <DisplayCatModal
         // data={data}
         likeState={likes?.includes(cat.id)}
         show={showModal}
@@ -27,7 +27,7 @@ const AllCats = ({ data, likes, ...props }) => {
         setShowModal={setShowModal}
         data={cat}
         background_color={cat.background_color}
-      /> */}
+      />
       <div className="card-columns">
         {data?.data?.map((each) => (
           // console.log("each", each),
