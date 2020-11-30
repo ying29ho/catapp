@@ -17,16 +17,22 @@ const MainPage = () => {
   const { data, error } = useSWR(
     "https://cdn.ivodigital.com/catsapp/felines.json"
   );
-  if (error)
+  if (error) {
     return (
       <div>
         <Heading>failed to load data. Please try again later</Heading>
       </div>
     );
-  if (!data) return <Loading />;
-  if (data?.status === "success")
+  }
+  if (!data) {
+    return <Loading />;
+  }
+  if (data.status === "success") {
     return (
-      <div className="my-5 mx-3">
+      <div className="main my-5 mx-3">
+        {/* <Heading className="main-text mx-auto py-auto">
+          Please switch to mobile to view the app
+        </Heading> */}
         <Heading>Catsat</Heading>
         <Paragraph className="p1">
           Browse through stranger's cute cats and like them for free.
@@ -62,6 +68,7 @@ const MainPage = () => {
         )}
       </div>
     );
+  }
 };
 
 export default MainPage;
