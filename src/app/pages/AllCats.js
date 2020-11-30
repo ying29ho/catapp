@@ -21,6 +21,8 @@ const AllCats = ({ data, likes, ...props }) => {
         likeState={likes?.includes(cat.id)}
         show={showModal}
         onHide={handleClose}
+        style={{ opacity: 1 }}
+        fade={false}
         // showModal={showModal}
         setShowModal={setShowModal}
         data={cat}

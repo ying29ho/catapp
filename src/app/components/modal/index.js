@@ -1,6 +1,4 @@
 import React from "react";
-// import { Modal } from "antd";
-// import {Modal } from boo
 import { Subheading, Paragraph } from "../typography";
 import { DescriptionCard } from "../card";
 import "./modal.css";
@@ -15,11 +13,13 @@ const DisplayCatModal = ({
   data,
   background_color,
   onHide,
-  likeState
+  likeState,
+  fade,
+  style
 }) => {
   const dispatch = useDispatch();
   return (
-    <Modal show={show} onHide={onHide}>
+    <Modal show={show} onHide={onHide} fade={fade} style={style}>
       <Modal.Body
         className="p-0"
         style={{ backgroundColor: `${background_color}` }}
