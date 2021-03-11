@@ -15,9 +15,6 @@
   display: none;
 }
 @media (min-width: 600px) {
-  /* .card-columns {
-    column-count: 4;
-  } */
   .main {
     position: fixed;
     display: none;
@@ -32,19 +29,6 @@
     display: block;
     width: 100%;
     margin: 12% 1.5vw;
-    /* text-align: center; */
     padding: auto auto;
   }
-  /* .main-text {
-    height: 100%;
-    width: 100%;
-    color: blueviolet;
-    opacity: 0.8;
-  }
-
-  .card-columns {
-    display: inline-block;
-    -webkit-column-break-inside: avoid;
-    column-count: 2;
-  } */
 }
