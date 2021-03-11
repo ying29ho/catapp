@@ -29,44 +29,50 @@ const MainPage = () => {
   }
   if (data.status === "success") {
     return (
-      <div className="main my-5 mx-3">
-        {/* <Heading className="main-text mx-auto py-auto">
+      <>
+        <div className="sub">
+          <Heading className="sub">Please Switch To Mobile View</Heading>
+        </div>
+        <div className="main my-5 mx-3">
+          {/* <Heading className="main-text mx-auto py-auto">
           Please switch to mobile to view the app
         </Heading> */}
-        <Heading>Catsat</Heading>
-        <Paragraph className="p1">
-          Browse through stranger's cute cats and like them for free.
-        </Paragraph>
-        <div className="row py-3 mx-auto">
-          <div className="col-6" style={{ width: "auto" }}>
-            <DefaultButton
-              variant="primary"
-              onClick={() => {
-                setAllPage(!allPage);
-              }}
-              disabled={allPage}
-            >
-              <ButtonFont style={{ fontSize: "14px" }}>All Cats</ButtonFont>
-            </DefaultButton>
+
+          <Heading>Catsat</Heading>
+          <Paragraph className="p1">
+            Browse through stranger's cute cats and like them for free.
+          </Paragraph>
+          <div className="row py-3 mx-auto">
+            <div className="col-6" style={{ width: "auto" }}>
+              <DefaultButton
+                variant="primary"
+                onClick={() => {
+                  setAllPage(!allPage);
+                }}
+                disabled={allPage}
+              >
+                <ButtonFont style={{ fontSize: "14px" }}>All Cats</ButtonFont>
+              </DefaultButton>
+            </div>
+            <div className="col-6" style={{ width: "auto" }}>
+              <DefaultButton
+                variant="primary"
+                onClick={() => {
+                  setAllPage(!allPage);
+                }}
+                disabled={!allPage}
+              >
+                <ButtonFont style={{ fontSize: "14px" }}>Liked Cats</ButtonFont>
+              </DefaultButton>
+            </div>
           </div>
-          <div className="col-6" style={{ width: "auto" }}>
-            <DefaultButton
-              variant="primary"
-              onClick={() => {
-                setAllPage(!allPage);
-              }}
-              disabled={!allPage}
-            >
-              <ButtonFont style={{ fontSize: "14px" }}>Liked Cats</ButtonFont>
-            </DefaultButton>
-          </div>
+          {allPage ? (
+            <AllCats data={data} likes={likes} />
+          ) : (
+            <LikedCats data={data} likes={likes} />
+          )}
         </div>
-        {allPage ? (
-          <AllCats data={data} likes={likes} />
-        ) : (
-          <LikedCats data={data} likes={likes} />
-        )}
-      </div>
+      </>
     );
   }
 };

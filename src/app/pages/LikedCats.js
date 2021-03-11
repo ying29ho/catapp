@@ -12,6 +12,7 @@ const LikedCats = ({ data, likes }) => {
   };
   const handleClose = () => {
     setShowModal(false);
+    // setCat({ name: "" });
   };
   return (
     <>
@@ -21,6 +22,7 @@ const LikedCats = ({ data, likes }) => {
         show={showModal}
         onHide={handleClose}
         // showModal={showModal}
+        animation={true}
         setShowModal={setShowModal}
         data={cat}
         background_color={cat.background_color}

@@ -12,6 +12,7 @@ const AllCats = ({ data, likes, ...props }) => {
     setShowModal(true);
   };
   const handleClose = () => {
+    // setCat({});
     setShowModal(false);
   };
   return (
@@ -22,8 +23,8 @@ const AllCats = ({ data, likes, ...props }) => {
         show={showModal}
         onHide={handleClose}
         style={{ opacity: 1 }}
-        fade={false}
         // showModal={showModal}
+        animation={true}
         setShowModal={setShowModal}
         data={cat}
         background_color={cat.background_color}

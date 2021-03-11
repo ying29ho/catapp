@@ -14,12 +14,12 @@ const DisplayCatModal = ({
   background_color,
   onHide,
   likeState,
-  fade,
+  animation,
   style
 }) => {
   const dispatch = useDispatch();
   return (
-    <Modal show={show} onHide={onHide} fade={fade} style={style}>
+    <Modal show={show} onHide={onHide} animation={animation} style={style}>
       <Modal.Body
         className="p-0"
         style={{ backgroundColor: `${background_color}` }}

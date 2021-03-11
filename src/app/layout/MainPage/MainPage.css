@@ -11,6 +11,9 @@
   height: 0px;
   width: 0px;
 }
+.sub {
+  display: none;
+}
 @media (min-width: 600px) {
   /* .card-columns {
     column-count: 4;
@@ -23,6 +26,14 @@
     color: blueviolet;
     opacity: 0.8;
     cursor: pointer;
+  }
+  .sub {
+    position: fixed;
+    display: block;
+    width: 100%;
+    margin: 12% 1.5vw;
+    /* text-align: center; */
+    padding: auto auto;
   }
   /* .main-text {
     height: 100%;
