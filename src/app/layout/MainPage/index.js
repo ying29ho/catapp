@@ -14,9 +14,7 @@ import LikedCats from "../../pages/LikedCats";
 const MainPage = () => {
   const [allPage, setAllPage] = useState(true);
   const likes = useSelector((s) => s.likes);
-  const { data, error } = useSWR(
-    "https://cdn.ivodigital.com/catsapp/felines.json"
-  );
+  const { data, error } = useSWR(process.env.REACT_APP_API);
   if (error) {
     return (
       <div>
